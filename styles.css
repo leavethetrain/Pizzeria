@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: green;
+}
+
+.hero-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background-image: url(hero.jpg),
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  background-blend-mode: overlay;
+
+  background-size: cover;
+  flex-wrap: wrap;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.subtitle {
+  color: #ddd;
+  margin: 0 0 1rem 0;
+}
+
+.title {
+  font-size: 3rem;
+  font-family: "Lobster", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 3rem;
+  margin: 0 0 1rem 0;
+}
+
+.button {
+  background-color: #ff3030;
+  border: 1px solid #ff3030;
+  width: max-content;
+  padding: 1rem 2rem;
+  margin-top: 4rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.button:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: inherit;
+
+  color: #ff3030;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.uebersicht {
+  text-decoration: none;
+  padding: 1.5rem;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.uebersicht:hover {
+  color: #ff3030;
+  transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (min-width: 600px) {
+  .title {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+  }
+
+  .button {
+    padding: 1.2rem 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .title {
+    font-size: 6rem;
+    line-height: 6.5rem;
+  }
+}
