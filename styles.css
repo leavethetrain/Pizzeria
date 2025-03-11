@@ -45,18 +45,20 @@ body {
 
   height: 5rem;
   gap: 1rem;
-  font-size: 0.8rem;
+  font-size: 0.5rem;
   text-align: center;
 }
 
-.nav-item {
+.nav-item,
+.impressum {
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
 }
 
-.nav-item:hover {
+.nav-item:hover,
+.impressum:hover {
   color: var(--primary-color);
   transition: all 0.3s ease-in-out;
 }
@@ -216,40 +218,35 @@ body {
 
 .footer {
   display: flex;
-
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 5rem;
-  gap: 9rem;
-  font-size: 1rem;
+  margin-top: 2rem;
+  gap: 1rem;
+  font-size: 0.8rem;
   text-align: center;
   background-color: #303030;
-  flex-wrap: wrap;
+  padding: 2rem 1rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .copyright {
-  padding-bottom: 2rem;
-  text-align: center;
-  font-size: 0.6rem;
-
-  background-color: #303030;
-}
-
-.impressum {
-  text-decoration: none;
+  margin-top: 1rem;
   color: var(--text-color);
 }
 
-.impressum:hover {
-  transition: all 0.3s ease-in-out;
-  color: var(--primary-color);
-}
-
 @media only screen and (min-width: 600px) {
-  .nav {
+  .nav,
+  .footer-links {
     gap: 2rem;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .title {
@@ -279,15 +276,26 @@ body {
   .contact-image {
     width: 60%;
   }
+
+  .footer {
+    margin-top: 4rem;
+    padding: 3rem 0;
+    gap: 3rem;
+  }
+
+  .footer-links {
+    flex-direction: row;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
-  .nav {
+  .nav,
+  .footer-links {
     gap: 4rem;
   }
   .title {
-    font-size: 6rem;
-    line-height: 6.5rem;
+    font-size: 4.5rem;
+    line-height: 5rem;
   }
 
   .title1 {
@@ -339,6 +347,10 @@ body {
 
   .contact-actions {
     flex-direction: row;
+  }
+
+  .footer {
+    margin-top: 6rem;
   }
 }
 
